@@ -1,0 +1,317 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #8cc461;
+  color: #ffff;
+  font-family: "Roboto", sans-serif;
+}
+
+
+.container{
+  display: flex;
+  flex-direction: column;
+}
+
+/* ----------------SCOREBOARD---------------------------------- */
+
+.heading-score{
+  display: flex;
+  justify-content: space-between;
+  width: 50rem;
+  height: 10rem;
+  border: 2px solid white;
+  margin: auto;
+  margin-top: 2.5rem;
+  align-items: center;
+  padding: 0 20px 0 20px;
+  border-radius: 15px;
+}
+
+
+.score{
+  display: flex;
+  font-weight: 500;
+  font-size: 1.1em;
+}
+
+.computerScore{
+  background-color: white;
+  color: #656565;
+  width: 8.5rem;
+  height: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0.5rem;
+  justify-content: center;
+  margin-right: 30px;
+  letter-spacing: 0.18rem;
+
+}
+
+.yourScore{
+  background-color: white;
+  color: #656565;
+  width: 8.5rem;
+  height: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0.5rem;
+  justify-content: center;
+  /* margin-right: 30px; */
+  letter-spacing: 0.18rem;
+}
+
+.yourScore h1 {
+  font-size: 4rem;
+  color:#252525;
+  
+
+}
+.computerScore h1 {
+  font-size: 4rem;
+  color:#252525;
+
+}
+
+.heading h1 {
+  letter-spacing: 0.3rem;
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+
+
+
+
+  .choices {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 35rem;
+    margin: auto;
+    margin-top: 6rem;
+    margin-left: 32rem;
+    /* background-image: url(./assets/Line\ 1.png); */
+}
+
+
+.icon{
+  position: relative;
+  right: 120px;
+  bottom: 50px;
+ 
+}
+
+
+#scissors_icon{
+  right: 6.5rem;
+}
+
+
+
+.choice img{
+  cursor: pointer;
+}
+
+
+
+.lines div{
+  height: 1rem;
+  width: 8rem;
+  background-color:rgba(0, 0, 0, 0.64) ;
+  z-index: -1;
+}
+
+
+#line1{
+  position: absolute;
+  top: 23rem;
+  left: 44rem;
+}
+
+#line2 {
+      /* top: 0; */
+    /* height: 18rem; */
+    transform: rotate(-45.57deg);
+    position: absolute;
+    left: 48rem;
+
+    top: 30rem;
+}
+
+#line3{
+  position: absolute;
+  transform: rotate(421deg);
+  left: 40rem;
+  /* width: 20rem; */
+  top: 29rem;
+}
+
+
+
+.rules{
+  width: 18rem;
+  height: 20rem;
+  border-radius: 0.8125rem;
+  border: 7px solid #FFF;
+  background: #004429;
+  position: relative;
+  /* align-items: center; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* position: relative; */
+  position: absolute;
+  left: 75rem;
+  top: 20rem;
+  list-style-position: inside;
+}
+
+
+
+
+
+.cross {
+  width: 150px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 246px;
+  top: -35px;
+  background-image: url(./assets/cross_icon.png);
+  background-repeat: no-repeat;
+  justify-content: center;
+}
+
+
+.cross span{
+  font-size: xxx-large;
+  position: absolute;
+  left: 15px;
+  top: 2px;
+
+}
+.rules h1{
+  margin-top: 2px;
+  padding: 0 25px 25px  25px;
+  font-weight: 100;
+}
+
+.rules li {
+  list-style-type: square;
+  font-size: 0.8rem;
+  padding-left: 3rem;
+  padding-right: 1rem;
+  
+  margin-bottom: 5px;
+  text-indent: -4px;
+}
+
+.rules li::marker {
+  content: '\25A0';
+  font-size: 1rem;
+  color: yellow;
+  padding-right: 25px;
+ 
+
+}
+
+
+li span{
+  display: inline;
+  padding-left: 20px;
+}
+
+
+#rule-button{
+  width: 7.4375rem;
+  height: 2.5rem;
+  border-radius: 0.625rem;
+  border: 2px solid #FFF;
+  background: rgba(217, 217, 217, 0.00);
+  position: absolute;
+  left: 85rem;
+  margin-top: 1rem;
+  color: white;
+}
+
+#next-button{
+  width: 7.4375rem;
+  height: 2.5rem;
+  border-radius: 0.625rem;
+  border: 2px solid #FFF;
+  background: rgba(217, 217, 217, 0.00);
+  position: absolute;
+  left: 85rem;
+  margin-top: 1rem;
+  color: white;
+  /* display: none; */
+}
+
+
+
+.game{
+  display: flex;
+  width: 50rem;
+  margin-top: 10rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  margin-top: 12rem;
+  display: none;
+}
+
+.game>div{
+  flex: 1;
+}
+
+
+.game h1 {
+  font-size: 20px;
+  margin-bottom: 50px;
+  text-align: center;
+
+}
+
+
+/* .game .chooseImage{
+  display: flex;
+  justify-content: center;
+} */
+
+
+.result{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.result h1{
+  font-size: 50px;
+  margin: 0;
+}
+.result h2{
+  font-size: 40px;
+}
+
+
+.newGame{
+  margin-top: 2rem;
+  width: 10.875rem;
+height: 2.75rem;
+border-radius: 0.5625rem;
+background: #FFF;
+color: #6B6B6B;
+display: flex;
+justify-content: center;
+align-items: center;
+}

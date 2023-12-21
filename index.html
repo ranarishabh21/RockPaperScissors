@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Delius&family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Rock Paper Scissor Game</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading-score">
+        <div class="heading">
+          <h1>ROCK</h1>
+          <h1>PAPER</h1>
+          <h1>SCISSORS</h1>
+        </div>
+
+        <div class="score">
+          <div class="computerScore">
+            <span>COMPUTER</span>
+            <span>SCORE</span>
+            <h1 id="pcScore">0</h1>
+          </div>
+          <div class="yourScore">
+            <span>YOUR</span>
+            <span>SCORE</span>
+            <h1 id="userScore">0</h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="choices">
+        <div class="choice rock">
+          <img
+            src="./assets/rock_background.png"
+            alt=""
+            id="rock_background"
+            onclick="userPick('rock')"
+          />
+          <img
+            src="./assets/rock_icon.png"
+            alt=""
+            id="rock_icon"
+            class="rock_icon icon"
+            onclick="userPick('rock')"
+          />
+        </div>
+
+        <div class="choice scissor">
+          <img
+            src="./assets/scissors_background.png"
+            alt=""
+            id="scissors_background"
+            onclick="userPick('scissors')"
+          />
+          <img
+            src="./assets/scissors_icon.png"
+            alt=""
+            id="scissors_icon"
+            class="scissors_icon icon"
+            onclick="userPick('scissors')"
+          />
+        </div>
+
+        <div class="choice paper">
+          <img
+            src="./assets/paper_background.png"
+            alt=""
+            id="paper_background "
+            onclick="userPick('paper')"
+          />
+          <img
+            src="./assets/paper_icon.png"
+            alt=""
+            id="paper_icon"
+            class="paper_icon icon"
+            onclick="userPick('paper')"
+          />
+        </div>
+        <div class="lines">
+          <div id="line1"></div>
+          <div id="line2"></div>
+          <div id="line3"></div>
+        </div>
+
+        <!-- 
+        <div class="game">       
+          <div class="userchoice">
+              <h1>YOU PICKED</h1>
+              <div class="handImageContainer">
+                <img id="userPickImage" src="/assets/Paper.png">
+              </div>
+          </div>
+          <div class="referee"> 
+              <div class="decision"><h1> YOU WIN! </h1></div>
+              <div class="newGame" onclick="restartGame()">PLAY AGAIN</div>
+          </div>
+          <div class="computerhand">
+              <h1>THE HOUSE PICKED</h1>
+              <div class="handImageContainer">
+                <img id="computerPickImage" src='/assets/Paper.png' /> 
+              </div>   
+          </div>       
+        </div>    -->
+
+        
+      </div>
+      <div class="game">
+        <div class="userchoice">
+          <h1>YOU PICKED</h1>
+          <div class="chooseImage">
+            <!-- <img src="./assets/scissors_background.png"  alt="" id="background"> -->
+            <img src="./assets/scissors_icon.png" alt="" id="userPicked" />
+            
+          </div>
+        </div>
+        <div class="result">
+          <div class="decision">
+            <h1>YOU WIN!</h1>
+            <h2>AGAINST PC</h2>
+          </div>
+          <div class="newGame" onclick="restartGame()">PLAY AGAIN</div>
+        </div>
+
+        <div class="computerchoice">
+          <h1>PC PICKED</h1>
+          <div class="chooseImage">
+            <!-- <img src="./assets/scissors_background.png" alt="" id="background"> -->
+            <img src="" alt="" id="compPicked" />
+          </div>
+        </div>
+      </div>
+      <div class="rules">
+        <div class="cross"><span>X</span></div>
+        <h1>Game Rules</h1>
+        <ul>
+          <li>
+            <span
+              >Rock beats scissors, scissors beat paper, and paper beats
+              rock.</span
+            >
+          </li>
+          <li>
+            <span
+              >Agree ahead of time whether you’ll count off “rock, paper,
+              scissors, shoot” or just “rock, paper, scissors.”</span
+            >
+          </li>
+          <li>
+            <span
+              >Use rock, paper, scissors to settle minor decisions or simply
+              play to pass the time</span
+            >
+          </li>
+          <li>
+            <span
+              >If both players lay down the same hand, each player lays down
+              another hand</span
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div class="buttons">
+        <button id="rule-button">Rules</button>
+        <a href="./assets/hurray.html"
+          ><button id="next-button">Next</button></a
+        >
+      </div>
+    </div>
+    <!-- <script src="script.js"></script> -->
+    <script src="script1.js"></script>
+  </body>
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Celebration</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #8cc461;
+        color: #ffff;
+        font-family: "Roboto", sans-serif;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        padding: 6rem;
+        margin: 2rem;
+      }
+
+      .Celebration {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 95vw;
+        height: auto;
+      }
+
+      .trophy {
+        position: absolute;
+        top: 70%;
+        transform: translateY(-50%);
+      }
+
+      .Message {
+        text-align: center;
+        padding-top: 4rem;
+      }
+
+      .playAgainButton {
+        color: #6b6b6b;
+        text-transform: uppercase;
+        padding: 0.5rem 1rem;
+        border: 2px solid white;
+        border-radius: 10px;
+        background-color: white;
+        cursor: pointer;
+        margin-top: 4rem;
+      }
+
+      .playAgainButton a {
+        text-decoration: none;
+        color: #6b6b6b;
+      }
+
+
+
+      .Message h1{
+        font-size: 7rem;
+      }
+
+      .Message h2{
+        font-size: 5rem;
+      }
+
+
+
+      
+.rules{
+  width: 18rem;
+  height: 20rem;
+  border-radius: 0.8125rem;
+  border: 7px solid #FFF;
+  background: #004429;
+  position: relative;
+  /* align-items: center; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* position: relative; */
+  position: absolute;
+  left: 75rem;
+  top: 25rem;
+  list-style-position: inside;
+}
+
+
+
+
+
+.cross {
+  width: 150px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 246px;
+  top: -35px;
+  background-image: url(./cross_icon.png);
+  background-repeat: no-repeat;
+  justify-content: center;
+}
+
+
+.cross span{
+  font-size: xxx-large;
+  position: absolute;
+  left: 15px;
+  top: 2px;
+
+}
+.rules h1{
+  margin-top: 2px;
+  padding: 0 25px 25px  25px;
+  font-weight: 100;
+}
+
+.rules li {
+  list-style-type: square;
+  font-size: 0.8rem;
+  padding-left: 3rem;
+  padding-right: 1rem;
+  
+  margin-bottom: 5px;
+  text-indent: -4px;
+}
+
+.rules li::marker {
+  content: '\25A0';
+  font-size: 1rem;
+  color: yellow;
+  padding-right: 25px;
+ 
+
+}
+
+
+li span{
+  display: inline;
+  padding-left: 20px;
+}
+
+
+#rules-button{
+  width: 7.4375rem;
+  height: 2.5rem;
+  border-radius: 0.625rem;
+  border: 2px solid #FFF;
+  background: rgba(217, 217, 217, 0.00);
+  position: absolute;
+  left: 85rem;
+  margin-top: 1rem;
+  color: white;
+}
+
+
+
+
+
+
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="Celebration">
+        <div class="stars">
+          <img src="./stars.png" alt="" />
+        </div>
+        <div class="trophy">
+          <img src="./Vector (1).png" alt="" />
+        </div>
+      </div>
+
+      <div class="Message">
+        <h1>Hurray !!</h1>
+        <h2>You won the game</h2>
+      </div>
+      <div class="playAgainButton">
+        <a href="/"><span>play Again</span></a>
+      </div>
+      <div class="rules">
+        <div class="cross"><span>X</span></div>
+        <h1>Game Rules</h1>
+        <ul>
+          <li>
+            <span
+              >Rock beats scissors, scissors beat paper, and paper beats
+              rock.</span
+            >
+          </li>
+          <li>
+            <span
+              >Agree ahead of time whether you’ll count off “rock, paper,
+              scissors, shoot” or just “rock, paper, scissors.”</span
+            >
+          </li>
+          <li>
+            <span
+              >Use rock, paper, scissors to settle minor decisions or simply
+              play to pass the time</span
+            >
+          </li>
+          <li>
+            <span
+              >If both players lay down the same hand, each player lays down
+              another hand</span
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="buttons"><button id="rules-button">Rules</button></div>
+      
+    </div>
+  </body>
+</html>
